@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo Span/Merge sel</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <table border="1" align="center" cellspacing="0" cellpadding="5">
+      <tr>
+        <th width="100">No</th>
+        <!-- Gabung kolom nama dan alamat -->
+        <th width="300" colspan="2">Span Nama dan NIM </th>
+      </tr>
+      <!-- Baris data pertama -->
+      <tr>
+        <!-- Gabung baris 1 dan 2 -->
+        <td rowspan="2">Span baris 1 dan 2</td>
+        <td>Danendra Dipa Dananjaya</td>
+        <td>22537141003</td>
+      </tr>
+      <!-- Baris data kedua -->
+      <tr>
+        <td>Alif Naywa Azzikra</td>
+        <td>22537141006</td>
+      </tr>
+    </table>
+  </body>
 </html>
