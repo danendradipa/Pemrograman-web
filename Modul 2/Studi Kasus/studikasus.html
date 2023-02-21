@@ -6,27 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studi Kasus Modul 2</title>
     <style>
+        /* di dalam style digunakan untuk memodifikasi bagian bagian body */
       .tabel {
         font-family: sans-serif;
         width: 50%;
+        /* membuat spasi pada border menghilang */
         border-collapse: collapse;
+        /* menghilangkan border kiri kanan pada tabel */
         border-left: hidden;
         border-right: hidden;
       }
 
-      th, td {
+      th,
+      td {
+        /* membuat tabel data dan tabel header memiliki border */
         border: 2px solid black;
+        /* membuat posisi tulisan di tengah  */
         text-align: center;
       }
 
+      /* membuat semua border bawah class "no-bot" di tag tr menjadi hilang  */
       tr.no-bot {
         border-bottom: hidden;
       }
     </style>
   </head>
   <body>
+    <!-- align center untuk membuat posisi tulisan di tengah -->
     <h2 align="center">PERBANDINGAN FITUR</h2>
+    
+    <!-- align center untuk membuat posisi tabel di tengah di tengah -->
+    <!-- cellspacing adalah jarak cell -->
+    <!-- cellpadding adalah jarak tulisan ke border cell -->
+    <!-- membari nama class untuk dipanggil di tag style -->
     <table class="tabel" align="center" cellspacing="0" cellpadding="10">
+
+      <!-- header tabel -->
       <tr>
         <th>No</th>
         <th>Features</th>
@@ -34,54 +49,80 @@
         <th>Facebook</th>
         <th>Twitter</th>
       </tr>
+
+      <!-- baris pertama tabel -->
+      <!-- membari nama class untuk dipanggil di tag style -->
       <tr class="no-bot">
         <td>1</td>
         <td>Cover Photo</td>
         <td></td>
         <td>&check;</td>
         <td>&check;</td>
+        <!-- html entity &check; untuk memunculkan tanda "✓" -->
       </tr>
+
+      <!-- baris kedua tabel -->
+      <!-- membari nama class untuk dipanggil di tag style -->
       <tr class="no-bot">
         <td>2</td>
         <td>Stories</td>
         <td>&check;</td>
         <td>&check;</td>
         <td></td>
+        <!-- html entity &check; untuk memunculkan tanda "✓" -->
       </tr>
+
+      <!-- baris ketiga tabel -->
+      <!-- membari nama class untuk dipanggil di tag style -->
       <tr class="no-bot">
         <td>3</td>
         <td>Photos</td>
         <td>&check;</td>
         <td>&check;</td>
         <td>&check;</td>
+        <!-- html entity &check; untuk memunculkan tanda "✓" -->
       </tr>
+
+      <!-- baris keempat tabel -->
+      <!-- membari nama class untuk dipanggil di tag style -->
       <tr class="no-bot">
         <td>4</td>
         <td>Videos</td>
         <td>&check;</td>
         <td>&check;</td>
         <td>&check;</td>
+        <!-- html entity &check; untuk memunculkan tanda "✓" -->
       </tr>
+
+      <!-- baris kelima tabel -->
       <tr>
         <td>5</td>
         <td>Carousels</td>
         <td>&check;</td>
         <td>&check;</td>
         <td>&check;</td>
+        <!-- html entity &check; untuk memunculkan tanda "✓" -->
       </tr>
+
+      <!-- baris keenam tabel -->
+      <!-- membari nama class untuk dipanggil di tag style -->
       <tr class="no-bot">
         <td>6</td>
         <td>Insights</td>
         <td>&check;</td>
         <td>&check;</td>
         <td>&check;</td>
+        <!-- html entity &check; untuk memunculkan tanda "✓" -->
       </tr>
+
+      <!-- baris ketujuh tabel -->
       <tr>
         <td>7</td>
         <td>Live Video</td>
         <td>&check;</td>
         <td>&check;</td>
         <td>&check;</td>
+        <!-- html entity &check; untuk memunculkan tanda "✓" -->
       </tr>
     </table>
   </body>
