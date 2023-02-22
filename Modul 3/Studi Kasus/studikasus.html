@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studi Kasus Modul 3</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <h2>Studi Kasus : Validasi Input HTML5</h2>
+    <form action="" method="post">
+      <table border="0">
+        <tr>
+          <td>Nama</td>
+          <td>
+            :
+            <input
+              type="text"
+              name="nama"
+              pattern="[A-Za-z ]+"
+              size="25"
+              placeholder="Isikan Nama Anda"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Usia</td>
+          <td>
+            :
+            <input
+              type="number"
+              name="usia"
+              size="1"
+              min="17"
+              max="30"
+              required
+            />
+            (Usia min 17-30)
+          </td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>
+            :
+            <input
+              type="email"
+              name="email"
+              size="25"
+              placeholder="nama_email@host.com"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Web</td>
+          <td>
+            :
+            <input
+              type="url"
+              name="web"
+              size="35"
+              placeholder="http://"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td>
+            :
+            <input
+              type="Password"
+              name="pass"
+              size="17"
+              placeholder="Semua karakter, min 8"
+              minlength="8"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            &nbsp;
+            <input type="submit" value="Submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
 </html>
