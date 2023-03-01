@@ -1,0 +1,10 @@
+/* Style css terpisah untuk diaplikasikan di tag html */
+.style1 {
+  color: brown;
+  font-style: italic;
+}
+
+#style2 {
+  color: orange;
+  font-weight: bold;
+}
