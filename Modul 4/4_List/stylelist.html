@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Style List</title>
-</head>
-<body>
-</body>
+    <style type="text/css">
+      /* Mengatur lebar dari id left menu menjadi 200px */
+      #leftmenu {
+        width: 200px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      /* menghilangkan underline dengan text decoration: none */
+      #leftmenu a:link,
+      #leftmenu a:visited,
+      #leftmenu a:active {
+        padding-left: 15px;
+        text-decoration: none;
+      }
+
+      /* Styling tag a pada atribut id leftmenu*/
+      #leftmenu a {
+        padding: 5px 0px 5px 15px;
+        display: block;
+        background: grey no-repeat left center;
+        margin: 0px 0px 1px;
+        color: #ffffff;
+      }
+
+      /* Menambah hover pada tag a atribut id left menu */
+      #leftmenu a:hover {
+        background: red no-repeat left center;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    List Normal
+    <ul>
+      <li>Pertama</li>
+      <li>Kedua</li>
+    </ul>
+    <hr />
+    Style List
+    <div id="leftmenu">
+      <ul>
+        <li><a href="#">Menu Pertama</a></li>
+        <li><a href="#">Menu Kedua</a></li>
+        <li><a href="#">Menu ketiga</a></li>
+      </ul>
+    </div>
+  </body>
 </html>
