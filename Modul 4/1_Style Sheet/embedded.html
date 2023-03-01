@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Embedded CSS</title>
-</head>
-<body>
-    
-</body>
+    <style type="text/css">
+      /* Ini adalah embedded style */
+      p {
+        color: orange;
+        font-style: italic;
+      }
+      
+      /* Ini adalah embedded style spesifik */
+      .style1 {
+        color: purple;
+        font-style: italic;
+      }
+
+      #style2 {
+        color: blue;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="style1">Ini paragraf Pertama</p>
+
+    <p id="style2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, magnam
+      inventore debitis veritatis iusto consectetur et itaque nisi vel enim,
+      voluptatibus sint perferendis aliquam quo ut optio accusamus impedit
+      quibusdam.
+    </p>
+
+    <p>Ini paragraf ketiga</p>
+  </body>
 </html>
