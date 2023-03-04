@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studi Kasus Modul 4</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      .circle {
+        background-color: aqua;
+        border-radius: 50%;
+        border: 2px solid black;
+        padding: 10px;
+        height: 200px;
+        width: 200px;
+        text-align: center;
+        line-height: 50px;
+      }
+
+      /* Border-top-left-radius untuk membuat pojok kiri atas menjadi tumpul */
+      /* Border-bottom-right-radius untuk membuat pojok kanan bawah menjadi tumpul */
+      .border {
+        background-color: aquamarine;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 300px;
+        border: 3px solid red;
+        padding: 20px;
+      }
+
+      /* box-shadow untuk mengatur bayangan offset sejauh sumbu x 10px dan y 10px */
+      .border-shadow {
+        background-color: #ffffff;
+        width: 300px;
+        border: 3px solid rgba(128, 128, 128, 0.699);
+        padding: 20px;
+        box-shadow: 10px 10px grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Studi Kasus Modul 4</h1>
+
+    <div class="circle">
+      <br />
+      <p>ini adalah border lingkaran</p>
+    </div>
+
+    <br />
+
+    <div class="border">bisa juga membuat border seperti ini</div>
+
+    <br />
+
+    <div class="border-shadow">bisa juga membuat border dan shadow</div>
+  </body>
 </html>
