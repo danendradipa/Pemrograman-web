@@ -6,9 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animasi Transisi</title>
+
+    <style>
+        /* Kondisi box awal */
+        .box {
+            width: 40%;
+            height: 100px;
+            background: brown;
+            border: 2px solid #212121;
+            /* Animasi lebar box */
+            -webkit-transition: width 1s ease-in-out;
+            -o-transition: width 1s ease-in-out;
+            -moz-transition: width 1s ease-in-out;
+            transition: width 1s ease-in-out;
+        }
+
+        /* Jika landscape, perlebar 100% */
+        @media (orientation:landscape) {
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <h3>Transisi CSS3</h3>
+
+    <div class="box"></div>
+
+    <p>
+        Ubah orientasi ke landscape/portrait dan sebaliknya
+        untuk melihat efek transisi
+    </p>
 
 </body>
 
