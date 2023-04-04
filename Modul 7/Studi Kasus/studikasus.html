@@ -17,16 +17,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <style>
+        /* Memberi warna Background dengan kode warna #f3f2ef */
         body {
             background-color: #f3f2ef;
         }
 
+        /* Warna Background akan menjadi putih saat ukuran dibawah 1161px */
         @media (max-width: 1161px) {
             body {
                 background-color: #ffffff;
             }
         }
 
+        /* gambar img di header dengan margin top 20px dan left 5px */
         header img {
             margin-top: 20px;
             margin-left: 5px;
@@ -157,6 +160,7 @@
 <body>
 
     <header class="main-header">
+        <!-- Menggunakan class Container pada bootstrap 3 -->
         <div class="container">
             <img src="https://logos-download.com/wp-content/uploads/2016/03/LinkedIn_Logo_2019-700x175.png"
                 alt="Linkedin Logo" width="135px" height="34px">
@@ -165,33 +169,45 @@
             professional life</h1>
     </header>
 
+    <!-- Menggunakan class Container pada bootstrap 3 -->
     <div class="container">
+        <!-- Menggunakan grid system pada bootstrap 3  -->
         <div class="row">
             <div class="wrap-login col-md-4 col-md-offset-4">
+                <!-- Membuat form pada bootstrap 3 -->
                 <form>
                     <div class="form-group">
                         <label class="input-label" for="email">Email or phone number</label>
                         <input type="text" class="form-control" id="email">
                     </div>
+
                     <div class="form-group">
                         <label class="input-label" for="password">Password (6 or more characters)</label>
                         <input type="password" class="form-control" id="password">
                     </div>
+
                     <p class="text-center">By clicking Agree & Join, you agree to the LinkedIn <span>User Agreement,
                             Privacy Policy</span>, and <span>Cookie Policy</span>.</p>
+
+                    <!-- Menggunakan button primary pada bootstrap 3 -->
                     <div class="agree">
                         <button type="button" class="btn btn-primary">Agree & Join</button>
                     </div>
+
                     <p class="or-option">
                         <span class="line"></span>
                         <span class="join-content"><span class="join-content-or-span">or</span></span>
                     </p>
+
+                    <!-- Menggunakan button default pada bootstrap 3 -->
                     <div class="google">
                         <button type="button" class="btn btn-default">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/882px-Google_%22G%22_Logo.svg.png"
                                 alt="google logo">Continue with Google </button>
                     </div>
+
                     <p class="already">Already on LinkedIn? <span>Sign In</span></p>
+
                 </form>
             </div>
         </div>
@@ -201,8 +217,10 @@
         Looking to create a page for a business? <span>Get help</span>
     </p>
 
+    <!-- Membuat footer pada halaman -->
     <footer class="li-footer">
-        <ul class="inline-block">
+        <!-- Menggunakan ul -->
+        <ul>
             <li>About</li>
             <li>Accessbility</li>
             <li>User Agreement</li>
