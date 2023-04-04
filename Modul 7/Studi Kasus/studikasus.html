@@ -15,17 +15,207 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            background-color: #f3f2ef;
+        }
+
+        @media (max-width: 1161px) {
+            body {
+                background-color: #ffffff;
+            }
+        }
+
+        header img {
+            margin-top: 20px;
+            margin-left: 5px;
+        }
+
+        .container .wrap-login {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 24px;
+        }
+
+        .container .input-label {
+            color: rgba(0, 0, 0, 0.6);
+            font-weight: lighter;
+        }
+
+        .container .text-center {
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.6);
+            font-weight: lighter;
+        }
+
+        .container .text-center span {
+            color: #0a66c2;
+        }
+
+        .already {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container .already span {
+            color: #0a66c2;
+        }
+
+        .main-logo {
+            margin-top: 25px;
+            margin-left: 200px;
+        }
+
+        .main-text {
+            padding: 10px 16px;
+            color: black;
+        }
+
+        .form-control {
+            border: 1px solid rgba(0, 0, 0, 0.6);
+        }
+
+        .agree .btn,
+        .btn-primary {
+            background-color: #0a66c2;
+            width: 100%;
+            height: 48px;
+            border-radius: 24px;
+        }
+
+        .google .btn,
+        .btn-default {
+            background-color: #ffffff;
+            width: 100%;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 24px;
+            font-weight: bold;
+            color: #3c4043;
+        }
+
+        .google img {
+            width: 20px;
+            margin-right: 5px;
+        }
+
+        .or-option {
+            margin-top: 20px;
+        }
+
+        .line {
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            background: #cdcfd2;
+            vertical-align: middle;
+        }
+
+        .join-content {
+            position: absolute;
+            left: 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .join-content-or-span {
+            padding: 0px 20px;
+            background: #ffffff;
+        }
+
+        .looking {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .looking span {
+            color: #0a66c2;
+        }
+
+        .li-footer {
+            position: absolute;
+            bottom: 0px;
+            padding: 10px 0px;
+            background-color: #ffffff;
+            width: 100%;
+        }
+
+        .li-footer ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .li-footer ul li {
+            list-style-type: none;
+        }
+    </style>
+
 </head>
 
 <body>
+
+    <header class="main-header">
+        <div class="container">
+            <img src="https://logos-download.com/wp-content/uploads/2016/03/LinkedIn_Logo_2019-700x175.png"
+                alt="Linkedin Logo" width="135px" height="34px">
+        </div>
+        <h1 class="main-text text-center">Make the most of your
+            professional life</h1>
+    </header>
+
     <div class="container">
         <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6"></div>
-
+            <div class="wrap-login col-md-4 col-md-offset-4">
+                <form>
+                    <div class="form-group">
+                        <label class="input-label" for="email">Email or phone number</label>
+                        <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label class="input-label" for="password">Password (6 or more characters)</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <p class="text-center">By clicking Agree & Join, you agree to the LinkedIn <span>User Agreement,
+                            Privacy Policy</span>, and <span>Cookie Policy</span>.</p>
+                    <div class="agree">
+                        <button type="button" class="btn btn-primary">Agree & Join</button>
+                    </div>
+                    <p class="or-option">
+                        <span class="line"></span>
+                        <span class="join-content"><span class="join-content-or-span">or</span></span>
+                    </p>
+                    <div class="google">
+                        <button type="button" class="btn btn-default">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/882px-Google_%22G%22_Logo.svg.png"
+                                alt="google logo">Continue with Google </button>
+                    </div>
+                    <p class="already">Already on LinkedIn? <span>Sign In</span></p>
+                </form>
+            </div>
         </div>
-
     </div>
+
+    <p class="looking">
+        Looking to create a page for a business? <span>Get help</span>
+    </p>
+
+    <footer class="li-footer">
+        <ul class="inline-block">
+            <li>About</li>
+            <li>Accessbility</li>
+            <li>User Agreement</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+            <li>Copyright Policy</li>
+            <li>Brand Policy</li>
+            <li>Guest Controls</li>
+            <li>Community Guidelines</li>
+            <li>Language</li>
+        </ul>
+    </footer>
+
 </body>
 
 </html>
