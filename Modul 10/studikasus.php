@@ -8,7 +8,7 @@ if (isset($_POST['login'])) {
     if ($username == "dipa" && $password == "2004") {
         //membuat session
         $_SESSION['login'] = $username;
-        header("location:beranda.php"); //mengarah ke page home.php
+        header("location:beranda.php"); //mengarah ke page beranda.php
     } else {
         $message = "<span style='color:red'>Username atau Password Salah! Silakan Coba Lagi</span>";
     }
