@@ -7,6 +7,6 @@
     }
     else {
         //session tidak muncul karena belum login atau belum berhasil login
-        die ("Anda belum login! Login  dulu <a href='session.php'> disini</a>");
+        die ("Anda belum login! Login  dulu <a href='session1.php'> disini</a>");
     }
 ?>
