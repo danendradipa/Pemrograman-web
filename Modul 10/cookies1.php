@@ -1,6 +1,6 @@
 <?php 
-    $value = 'ani';
-    $value2 = 'Ani Roma';
+    $value = 'Dipa';
+    $value2 = 'Danendra Dipa';
     setcookie("username", $value);
     setcookie("nama_lengkap", $value2, time()+3600); //expired login 1 jam
     echo "<h2>Ini halaman untuk set cookie</h2>";
