@@ -1,0 +1,17 @@
+<html>
+    <title>Belajar Javascript Penanganan Objek String</title>
+    <body>
+        <form name="test" onSubmit="checkemail(this.test2.value);return false">
+            <input type="text" size=20 name="test2"> <input type="submit"
+            value="Submit">
+            </form>
+            <script type="text/javascript">
+            function checkemail(email){
+            if (email.indexOf("@")!=-1 && email.indexOf(".")!=-1)
+            alert("Apakah Alamat Email Sudah Benar?")
+            else
+            alert("Penulisan Email Salah!")
+            }
+            </script>
+    </body>
+</html>
